@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="converter-wrapper">
+        <div class="header">
+            <h1>Temperature Converter</h1>
+            <p>Convert Between Kelvin, Celsius, and Fahrenheit</p>
+        </div>
+
+        <!-- Input Temperature Section -->
+        <div class="input-output-section">
+            <div class="input-box">
+                <h2>Enter Temperature</h2>
+                <input type="text" id="temp-input" placeholder="Enter temperature">
+                <select id="input-unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <!-- Output Temperature Section -->
+            <div class="output-box">
+                <h2>Converted Temperature</h2>
+                <input type="text" id="temp-output" disabled placeholder="Converted temperature">
+                <select id="output-unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Convert Button -->
+        <button id="convert-btn" class="convert-btn">Convert</button>
+
+        <!-- Result Display -->
+        <div class="result-section">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

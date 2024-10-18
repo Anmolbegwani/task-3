@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F6F9; /* Soft background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333333;
+}
+
+/* Main Converter Wrapper */
+.converter-wrapper {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #7F8C8D;
+    margin-bottom: 30px;
+}
+
+/* Input and Output Section */
+.input-output-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-box, .output-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-box h2, .output-box h2 {
+    font-size: 20px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #BDC3C7;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
+
+/* Convert Button */
+.convert-btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.convert-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Result Section */
+.result-section {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #27AE60; /* Green for success */
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-output-section {
+        flex-direction: column;
+    }
+}
